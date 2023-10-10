@@ -6,7 +6,6 @@ import { BigNumber } from "ethers";
 export const swapEthToToken = async (tokenName, amount) => {
   try {
     const tx = { value: toWei(amount) };
-    console.log("amouunt....", tx);
     const contractObj = await contract();
     const data = await contractObj.swapEthtoToken(tokenName, tx);
     const receipt = await data.wait();
@@ -21,7 +20,6 @@ export const SwapTokenToEth = async (tokenName, amount) => {
   try {
     const contractObj = await contract();
     const data = await contractObj.swapTokentoEth(tokenName, toWei(amount));
-    console.log("swapTokenToEth....", data);
     const receipt = await data.wait();
     return receipt;
   } catch (error) {
@@ -36,11 +34,10 @@ export const increaseAllowances = async (tokenName, amount) => {
     const address = await contractObj.getTokenAddress(tokenName);
     const tokenContractObj = await tokenContract(address);
     const data = await tokenContractObj.approve(
-      `0xe0BC862364d91EDB074041c98B8Df99DC6A1558C`,
+      `0x8dA78e6D47870911bE47A711d24c7946d055b8Cc`,
       toWei(amount)
     );
     const receipt = await data.wait();
-    console.log("increaseAllowances..", receipt);
     return receipt;
   } catch (error) {
     console.log("error", error);
@@ -49,20 +46,19 @@ export const increaseAllowances = async (tokenName, amount) => {
 
 //here we checking valid allowances..
 export const hasValidAllowance = async (owner, tokenName, amount) => {
-  console.log("hasValidAllowamce..", owner, tokenName, amount);
   try {
     const contractObj = await contract();
     const address = await contractObj.getTokenAddress(tokenName);
     const tokenContractObj = await tokenContract(address);
     const data = await tokenContractObj.allowance(
       owner,
-      `0xe0BC862364d91EDB074041c98B8Df99DC6A1558C`
+      `0x8dA78e6D47870911bE47A711d24c7946d055b8Cc`
     );
-    console.log("datahasValidAllowamce.....", data);
+
     const result = BigNumber.from(data.toString()).gte(
       BigNumber.from(toWei(amount))
     );
-    console.log("hasvalidallowance..", result);
+
     return result;
   } catch (error) {
     console.log("error", error);
@@ -110,11 +106,9 @@ export async function getEthBalnce() {
   try {
     const contractObj = await contract();
     const balance = await contractObj.getEthBalance();
-    console.log("baljioikgmk", balance);
     const newBalance = toEth(balance.toString());
     return newBalance;
   } catch (error) {
     console.log(error);
   }
 }
-

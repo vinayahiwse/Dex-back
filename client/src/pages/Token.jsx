@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { ClipboardIcon, ClipboardCheckIcon } from "@heroicons/react/outline";
 
 export default function Token() {
-  const { address } = useAccount();
+  const { address, isConnected } = useAccount();
   const [state, setState] = useState([]);
   const [loading, setLoading] = useState(false);
   const [copyIcon, setCopyIcon] = useState({ icon: ClipboardIcon });
@@ -16,8 +16,11 @@ export default function Token() {
       if (address) {
         setLoading(true);
         const data = await TransactionRecord();
+        const currentAddressData = data?.filter(
+          (el) => el._receiver === address
+        );
         setLoading(false);
-        setState(data);
+        setState(currentAddressData);
       }
     };
     fetchToken();
@@ -25,7 +28,7 @@ export default function Token() {
 
   return (
     <>
-      <div className="w-full dark:bg-gray-700 pt-20 pb-80">
+      <div className="w-full dark:bg-gray-700 pt-20 pb-96">
         <p className="text-white text-4xl hover:text-gray-900 text-center cursor-pointer font-bold mb-20">
           Transaction Records
         </p>
@@ -34,11 +37,22 @@ export default function Token() {
             <tr className="border border-slate-600">
               <th className="text-[#ffffff] text-xl p-4">Receiver Address</th>
               <th className="text-[#ffffff] text-xl p-4">Received Token</th>
-              <th className="text-[#ffffff] text-xl p-4">Amount</th>
+              <th className="text-[#ffffff] text-xl p-4">Token Amount</th>
               <th className="text-[#ffffff] text-xl p-4">Time</th>
             </tr>
           </thead>
-          {loading ? (
+          {!isConnected ? (
+            <tbody>
+              <tr className="text-white">
+                <td
+                  colSpan="4"
+                  className="text-center text-[#ffffff] text-xl p-4"
+                >
+                  Please Connect Wallet....
+                </td>
+              </tr>
+            </tbody>
+          ) : loading && isConnected ? (
             <tbody className="text-white">
               <tr>
                 <td colSpan="4" className="text-center p-4">
@@ -52,8 +66,7 @@ export default function Token() {
                 </td>
               </tr>
             </tbody>
-          ) : (
-            state &&
+          ) : state && state.length > 0 ? (
             state?.map((el, i) => (
               <tbody
                 key={i}
@@ -88,6 +101,17 @@ export default function Token() {
                 </tr>
               </tbody>
             ))
+          ) : (
+            <tbody>
+              <tr className="text-white">
+                <td
+                  colSpan="4"
+                  className="text-center text-[#ffffff] text-xl p-4"
+                >
+                  Transaction Records not found....
+                </td>
+              </tr>
+            </tbody>
           )}
         </table>
       </div>

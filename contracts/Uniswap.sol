@@ -151,6 +151,18 @@ contract Uniswap {
             )
         );
 
+        //here we added new token amount..
+        // Check if the destination token is "CoinB" and double the amount accordingly
+        if (keccak256(bytes(dstTokenName)) == keccak256(bytes("CoinB"))) {
+            _amount = _amount * 2; // Double the amount for "CoinB"
+        } else if (
+            keccak256(bytes(srcTokenName)) == keccak256(bytes("CoinB"))
+        ) {
+            _amount = _amount / 2; // Halve the amount for CoinB to CoinA or CoinC
+        } else {
+            _amount = _amount; // Keep the same amount for other tokens
+        }
+
         //here we adding transaction history..
         Transaction memory newTransaction = Transaction({
             _receiver: msg.sender,
@@ -166,8 +178,8 @@ contract Uniswap {
             _amount,
             block.timestamp
         );
-        //end here..
 
+        //end here..
         require(tokenInstanceMap[dstTokenName].transfer(msg.sender, _amount));
     }
 }

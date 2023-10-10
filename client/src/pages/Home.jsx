@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { BsFillArrowDownSquareFill } from "react-icons/bs";
+import {
+  BsFillArrowDownSquareFill,
+  BsFillArrowUpSquareFill,
+} from "react-icons/bs";
 import { FcSettings } from "react-icons/fc";
 import Modal from "../components/Modal";
 import { IoIosArrowDown } from "react-icons/io";
@@ -26,6 +29,7 @@ export default function Home() {
   const [outputValue, setOutputValue] = useState("");
   const [swapBtnText, setSwapBtnText] = useState("ENTER_AMOUNT");
   const [tokenBalComp, setTokenBalComp] = useState();
+  const [reverse, setReverse] = useState(false);
 
   const handleModal = () => {
     setModal(true);
@@ -108,6 +112,14 @@ export default function Home() {
     }
   }, [address]);
 
+  const handleChangeSwap = () => {
+    setReverse(!reverse);
+    setInputValue(outputValue);
+    setOutputValue(inputValue);
+    setSrcToken(destToken);
+    setDestToken(srcToken);
+  };
+
   return (
     <>
       <div className="bg-white dark:bg-gray-700">
@@ -138,10 +150,21 @@ export default function Home() {
               <p className="absolute top-2 left-3 text-white text-sm">
                 You pay
               </p>
-              <BsFillArrowDownSquareFill
-                style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
-                className="absolute z-10 dark:text-gray-400 rounded-lg cursor-pointer top-[88%] left-[45%] text-4xl"
-              />
+
+              {reverse ? (
+                <BsFillArrowUpSquareFill
+                  style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+                  onClick={handleChangeSwap}
+                  className="absolute z-10 dark:text-gray-400 rounded-lg cursor-pointer top-[88%] left-[45%] text-4xl"
+                />
+              ) : (
+                <BsFillArrowDownSquareFill
+                  style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+                  onClick={handleChangeSwap}
+                  className="absolute z-10 dark:text-gray-400 rounded-lg cursor-pointer top-[88%] left-[45%] text-4xl"
+                />
+              )}
+
               <button
                 onClick={handleModal1}
                 className="flex justify-center items-center gap-1 absolute text-white top-[30%] right-6  bg-white dark:bg-gray-800 font-medium rounded-xl text-lg px-2 py-1 text-center mr-3 md:mr-0"
@@ -157,6 +180,10 @@ export default function Home() {
                     ? inputValue * 10000
                     : destToken === "Eth" && srcToken !== "Eth"
                     ? inputValue / 10000
+                    : destToken === "CoinB" && srcToken !== "Eth"
+                    ? inputValue * 2
+                    : destToken !== "Eth" && srcToken === "CoinB"
+                    ? inputValue / 2
                     : inputValue
                 }
                 placeholder={"0.0"}
@@ -184,6 +211,14 @@ export default function Home() {
                     ? `1 Eth = 10,000 (${inputValue * 10000}) ${destToken}`
                     : destToken === "Eth" && srcToken !== "Eth"
                     ? `1000 ${srcToken}  = 0.1 Eth (${inputValue / 10000})`
+                    : destToken === "CoinB" && srcToken !== "Eth"
+                    ? `10 ${srcToken} = 20 CoinB (${
+                        inputValue * 2
+                      } ${srcToken})`
+                    : destToken !== "Eth" && srcToken === "CoinB"
+                    ? `10 CoinB = 5 ${destToken} (${
+                        inputValue / 2
+                      } ${destToken})`
                     : `10 ${srcToken} = 10 ${destToken}`}
                 </p>
                 <IoIosArrowDown className="ml-auto text-sm" />

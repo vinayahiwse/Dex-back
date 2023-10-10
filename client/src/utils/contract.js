@@ -22,7 +22,7 @@ export const contract = async () => {
   if (ethereum) {
     const signer = provider.getSigner();
     const contractReader = new ethers.Contract(
-      `0xe0BC862364d91EDB074041c98B8Df99DC6A1558C`,
+      `0x8dA78e6D47870911bE47A711d24c7946d055b8Cc`,
       UniswapAbi.abi,
       signer
     );
