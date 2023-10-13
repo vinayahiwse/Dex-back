@@ -42,7 +42,8 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ## DashBoard
 
-[Screenshot from 2023-10-13 10-11-41](https://github.com/vinayahiwse/Dex-back/assets/147159484/c8ec29ee-3651-42a3-bdc6-250b0f37137f)
+![homePage](https://github.com/vinayahiwse/Dex-back/assets/147159484/36a814c0-3f04-4548-9e8d-74ee10cb6ba3)
+
 *Caption for Screenshot 1*
 
 ![Screenshot 2](screenshots/screenshot2.png)
