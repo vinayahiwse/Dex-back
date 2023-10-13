@@ -36,6 +36,10 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ## Getting Started
 
+- **Frontend** : npm start
+  
+- **Hardhat Deploy Smart Contract** : npx hardhat run --network <your-network> scripts/deploy.js
+
 ### Prerequisites
 
 - Node.js: Ensure that Node.js is installed on your machine. You can download it [here](https://nodejs.org/).
