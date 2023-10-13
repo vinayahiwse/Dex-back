@@ -20,6 +20,8 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 - **Blockchain**: Ethereum
 
+- **Blockchain Infrastructure**: [Alchemy](https://alchemyapi.io/)
+
 - **Smart Contracts**: Solidity, Hardhat
 
 - **Frontend**: React
