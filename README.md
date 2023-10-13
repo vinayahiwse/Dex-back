@@ -52,6 +52,9 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ![metamask](https://github.com/vinayahiwse/Dex-back/assets/147159484/446df533-7fd4-485f-bae5-0c908422ee78)
 
+## Wallet And Token Balance
+
+![balance](https://github.com/vinayahiwse/Dex-back/assets/147159484/9590ad59-6dd8-4141-ab6b-474d3f0712f6)
 
 ### Prerequisites
 
