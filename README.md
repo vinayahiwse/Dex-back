@@ -18,21 +18,19 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ## Tech Stack
 
-- **Blockchain**: [Specify the blockchain platform you're using, e.g., Ethereum, Binance Smart Chain]
+- **Blockchain**: Ethereum
 
-- **Smart Contracts**: [Specify the smart contract language and framework, e.g., Solidity, Truffle]
+- **Smart Contracts**: Solidity, Hardhat
 
-- **Frontend**: [Specify the frontend technologies, e.g., React, Vue.js]
+- **Frontend**: React
 
-- **Backend**: [Specify the backend technologies, e.g., Node.js, Express]
+- **CSS**: Tailwind
 
-- **Database**: [Specify the database system, e.g., MongoDB]
+- **Wallet Integration**: Ethers.js , Wagmi , Web3Model
 
-- **Wallet Integration**: [Specify the wallet integration method, e.g., Web3.js for Ethereum]
+- **Testing**: RemixID, Mocha, Chai
 
-- **Testing**: [Specify testing tools and frameworks, e.g., Mocha, Chai]
-
-- **Version Control**: [Specify version control system, e.g., Git]
+- **Version Control**: Git
 
 ## Getting Started
 
