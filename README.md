@@ -40,11 +40,9 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
   
 - **Hardhat Deploy Smart Contract** : npx hardhat run --network [your-network] scripts/deploy.js
 
-## Screenshots
+## DashBoard
 
-Include some screenshots or diagrams to visually represent your project. For example:
-
-![Screenshot 1](screenshots/screenshot1.png)
+[Screenshot from 2023-10-13 10-11-41](https://github.com/vinayahiwse/Dex-back/assets/147159484/c8ec29ee-3651-42a3-bdc6-250b0f37137f)
 *Caption for Screenshot 1*
 
 ![Screenshot 2](screenshots/screenshot2.png)
