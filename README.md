@@ -60,6 +60,42 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ![tokenlist](https://github.com/vinayahiwse/Dex-back/assets/147159484/8a87e545-573d-4bed-bd76-e9a320c1665b)
 
+## Swapping
+
+![swpping](https://github.com/vinayahiwse/Dex-back/assets/147159484/49acd79a-7e48-41c5-aade-4999ce14a494)
+
+## Eth To Token Swapping
+
+![ethtotoken](https://github.com/vinayahiwse/Dex-back/assets/147159484/8f651d93-1b29-46c5-b138-13d05327edc4)
+
+## Token To Token
+
+![tokentotoken](https://github.com/vinayahiwse/Dex-back/assets/147159484/ff89e7b6-495f-4fac-af19-793fa4276617)
+
+## Allowance
+
+![allowance](https://github.com/vinayahiwse/Dex-back/assets/147159484/0fc434e5-dfd9-4902-affe-1ef9d0735506)
+
+## Approve Allowance
+
+![approve](https://github.com/vinayahiwse/Dex-back/assets/147159484/c41ff7b4-56c2-4427-a323-a5d576adf22d)
+
+## Swapping Transaction
+
+![transaction](https://github.com/vinayahiwse/Dex-back/assets/147159484/ed0bf163-808a-4a1a-80b8-00633e5064d0)
+
+## Transaction History
+
+![history](https://github.com/vinayahiwse/Dex-back/assets/147159484/56865886-20bc-4102-b194-e9bd7b5810fd)
+
+## Wallet Disconnect
+
+![disconnect](https://github.com/vinayahiwse/Dex-back/assets/147159484/c7bf7007-7a7f-463b-8212-9a16c9c15afe)
+
+## After Wallet Disconnect
+
+![afterdisconnect](https://github.com/vinayahiwse/Dex-back/assets/147159484/6a4b3937-24c4-4ee9-8376-d77f52c44348)
+
 
 ### Prerequisites
 
