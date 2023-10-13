@@ -102,7 +102,9 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 To run this project, you need to set up the following environment variables:
 
 - **`API_KEY`**: Your API key for blockchain infrastructure (e.g., Alchemy,Infura).
+  
 - **`PROVIDER_URL`**: URL for connecting to your smart contract (e.g., Alchemy,Infura).
+  
 - **`WALLET_PRIVATE_KEY`**: Private key for the cryptocurrency wallet integration.
 
 
