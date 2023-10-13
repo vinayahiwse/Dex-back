@@ -40,6 +40,17 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
   
 - **Hardhat Deploy Smart Contract** : npx hardhat run --network [your-network] scripts/deploy.js
 
+## Environment Variables
+
+To run this project, you need to set up the following environment variables:
+
+- **`API_KEY`**: Your API key for blockchain infrastructure (e.g., Alchemy,Infura).
+  
+- **`PROVIDER_URL`**: URL for connecting to your smart contract (e.g., Alchemy,Infura).
+  
+- **`WALLET_PRIVATE_KEY`**: Private key for the cryptocurrency wallet integration.
+
+
 ## DashBoard
 
 ![homePage](https://github.com/vinayahiwse/Dex-back/assets/147159484/36a814c0-3f04-4548-9e8d-74ee10cb6ba3)
@@ -96,16 +107,6 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ![afterdisconnect](https://github.com/vinayahiwse/Dex-back/assets/147159484/6a4b3937-24c4-4ee9-8376-d77f52c44348)
 
-
-## Environment Variables
-
-To run this project, you need to set up the following environment variables:
-
-- **`API_KEY`**: Your API key for blockchain infrastructure (e.g., Alchemy,Infura).
-  
-- **`PROVIDER_URL`**: URL for connecting to your smart contract (e.g., Alchemy,Infura).
-  
-- **`WALLET_PRIVATE_KEY`**: Private key for the cryptocurrency wallet integration.
 
 
 ### Prerequisites
