@@ -44,7 +44,7 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ![homePage](https://github.com/vinayahiwse/Dex-back/assets/147159484/36a814c0-3f04-4548-9e8d-74ee10cb6ba3)
 
-## DashBoard
+## Wallet Connect
 
 ![walletconnect](https://github.com/vinayahiwse/Dex-back/assets/147159484/4e615d5d-ba33-4d03-ac13-b6767a763ae8)
 
