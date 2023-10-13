@@ -16,6 +16,24 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 - **Liquidity Pools**: Liquidity is provided by users through decentralized liquidity pools, allowing for more efficient and decentralized trading.
 
+## Tech Stack
+
+- **Blockchain**: [Specify the blockchain platform you're using, e.g., Ethereum, Binance Smart Chain]
+
+- **Smart Contracts**: [Specify the smart contract language and framework, e.g., Solidity, Truffle]
+
+- **Frontend**: [Specify the frontend technologies, e.g., React, Vue.js]
+
+- **Backend**: [Specify the backend technologies, e.g., Node.js, Express]
+
+- **Database**: [Specify the database system, e.g., MongoDB]
+
+- **Wallet Integration**: [Specify the wallet integration method, e.g., Web3.js for Ethereum]
+
+- **Testing**: [Specify testing tools and frameworks, e.g., Mocha, Chai]
+
+- **Version Control**: [Specify version control system, e.g., Git]
+
 ## Getting Started
 
 ### Prerequisites
@@ -26,4 +44,4 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/vinayahiwse/Dex-back.git]
+   git clone https://github.com/vinayahiwse/Dex-back.git
