@@ -38,7 +38,7 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 - **Frontend** : npm start
   
-- **Hardhat Deploy Smart Contract** : npx hardhat run --network <your-network> scripts/deploy.js
+- **Hardhat Deploy Smart Contract** : npx hardhat run --network [your-network] scripts/deploy.js
 
 ### Prerequisites
 
