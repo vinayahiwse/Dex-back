@@ -24,9 +24,9 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 - **Smart Contracts**: Solidity, Hardhat
 
-- **Frontend**: React
+- **Frontend**: React.js
 
-- **CSS**: Tailwind
+- **CSS**: Tailwind CSS
 
 - **Wallet Integration**: Ethers.js , Wagmi , Web3Model
 
@@ -44,4 +44,5 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 1. Clone the repository:
    ```bash
+   
    git clone https://github.com/vinayahiwse/Dex-back.git
