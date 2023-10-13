@@ -56,6 +56,11 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ![balance](https://github.com/vinayahiwse/Dex-back/assets/147159484/9590ad59-6dd8-4141-ab6b-474d3f0712f6)
 
+## Token Select List
+
+![tokenlist](https://github.com/vinayahiwse/Dex-back/assets/147159484/8a87e545-573d-4bed-bd76-e9a320c1665b)
+
+
 ### Prerequisites
 
 - Node.js: Ensure that Node.js is installed on your machine. You can download it [here](https://nodejs.org/).
