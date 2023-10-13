@@ -6,6 +6,7 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ## Features
 
+
 - **Decentralized Trading**: Trade directly from your cryptocurrency wallet without the need for a central authority or intermediary.
 
 - **Security**: Utilizes blockchain technology to ensure the security of funds and transactions, reducing the risk of hacks or fraud.
@@ -15,8 +16,10 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 - **User Control**: Users have full control of their private keys and funds, enhancing the security and privacy of their assets.
 
 - **Liquidity Pools**: Liquidity is provided by users through decentralized liquidity pools, allowing for more efficient and decentralized trading.
+  
 
 ## Tech Stack
+
 
 - **Blockchain**: Ethereum
 
@@ -33,12 +36,14 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 - **Testing**: RemixID, Mocha, Chai
 
 - **Version Control**: Git
+  
 
 ## Getting Started
 
 - **Frontend** : npm start
   
 - **Hardhat Deploy Smart Contract** : npx hardhat run --network [your-network] scripts/deploy.js
+  
 
 ## Environment Variables
 
@@ -49,6 +54,7 @@ To run this project, you need to set up the following environment variables:
 - **`PROVIDER_URL`**: URL for connecting to your smart contract (e.g., Alchemy,Infura).
   
 - **`WALLET_PRIVATE_KEY`**: Private key for the cryptocurrency wallet integration.
+  
 
 
 ## DashBoard
