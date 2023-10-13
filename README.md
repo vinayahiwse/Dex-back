@@ -48,6 +48,11 @@ This project is a decentralized exchange (DEX) designed to provide users with a 
 
 ![walletconnect](https://github.com/vinayahiwse/Dex-back/assets/147159484/4e615d5d-ba33-4d03-ac13-b6767a763ae8)
 
+## MetaMask Connect
+
+![metamask](https://github.com/vinayahiwse/Dex-back/assets/147159484/446df533-7fd4-485f-bae5-0c908422ee78)
+
+
 ### Prerequisites
 
 - Node.js: Ensure that Node.js is installed on your machine. You can download it [here](https://nodejs.org/).
